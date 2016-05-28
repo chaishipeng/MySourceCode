@@ -1,0 +1,17 @@
+<Message>
+	<TestStringTag>TestHandler</TestStringTag>
+	<Map1>
+		<MapInner>inneraaaaa</MapInner>
+	</Map1>
+	<List>
+		<Map>
+			<MapInner>1</MapInner>
+		</Map>
+		<Map>
+			<MapInner>2</MapInner>
+		</Map>
+		<Map>
+			<MapInner>3</MapInner>
+		</Map>
+	</List>
+</Message>

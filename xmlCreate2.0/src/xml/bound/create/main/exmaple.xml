@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Map tagName="Message">
+    <Map tagName="TestBean" name="TestBean">
+        <String tagName="TestBeanKey" name="name"></String>
+    </Map>
+     <Map tagName="Body">
+        <include key="_TranName"></include>
+     </Map>
+</Map>
