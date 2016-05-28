@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message>
+   <Head>
+      <_TransactionId>per.test</_TransactionId>
+   </Head>
+   <Body>
+       <Name>chai</Name>
+       <Map>
+           <BookName>java</BookName>
+       </Map>
+       <List>
+          <Map>
+             <BookName>java1</BookName>
+          </Map>
+          <Map>
+             <BookName>java2</BookName>
+          </Map>
+          <Map>
+             <BookName>java3</BookName>
+          </Map>
+       </List>
+       <CardInfo>
+          <CardNo>401456789784</CardNo>
+          <Currency>
+             <Code>CNY</Code>
+          </Currency>
+          <BankAcType>PPDC</BankAcType>
+       </CardInfo>
+   </Body>
+</Message>
