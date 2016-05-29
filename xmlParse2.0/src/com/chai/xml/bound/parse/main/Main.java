@@ -27,8 +27,12 @@ public class Main {
 		Properties elementParsePro = new Properties();
 		elementParsePro.load(Main.class.getResourceAsStream("elementParseProperties.properties"));
 		
+		Properties elementAliasPro = new Properties();
+		elementAliasPro.load(Main.class.getResourceAsStream("elementParseProperties.properties"));
+		
 		factory.setClassNameProperties(classNamePro);
 		factory.setElementParseProperties(elementParsePro);
+		factory.setElementTagAliasParseProperties(elementAliasPro);
 		
 		factory.registerElement("Map", MapElement.class);
 		factory.registerElement("List", ListElement.class);

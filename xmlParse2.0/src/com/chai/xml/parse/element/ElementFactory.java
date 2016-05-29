@@ -13,6 +13,8 @@ public interface ElementFactory {
 
 	public void setElementParseProperties(Properties elementParseProperties);
 	
+	public void setElementTagAliasParseProperties(Properties elementParseProperties);
+	
 	public void registerValueConvertHandler(Class class0,ValueConvertHandler valueConvertHandler);
 	
 	public Object convertValue(Object text,Class requireType);

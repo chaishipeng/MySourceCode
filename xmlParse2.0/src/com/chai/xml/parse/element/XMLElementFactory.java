@@ -13,6 +13,8 @@ public class XMLElementFactory implements ElementFactory{
 	
 	public Properties elementParseProperties;
 	
+	public Properties elementTagAliasProperties;
+	
 	public Properties getClassNameProperties() {
 		return classNameProperties;
 	}
@@ -34,6 +36,11 @@ public class XMLElementFactory implements ElementFactory{
 	public Map<Class,ValueConvertHandler> valueConvertHandlerMap = new HashMap<Class,ValueConvertHandler>();
 	
 	public Element createElement(String elementName) {
+		
+		String tagAliasName = elementTagAliasProperties.getProperty(elementName);
+		if(tagAliasName!=null){
+			elementName = tagAliasName;
+		}
 		
 		String className = classNameProperties.getProperty(elementName);
 		
@@ -114,6 +121,13 @@ public class XMLElementFactory implements ElementFactory{
 		}
 		
 		return handler.convertValue(text);
+	}
+
+	@Override
+	public void setElementTagAliasParseProperties(
+			Properties elementParseProperties) {
+		this.elementTagAliasProperties = elementParseProperties;
+		
 	}
 	
 	
