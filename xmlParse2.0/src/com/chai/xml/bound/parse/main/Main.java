@@ -28,7 +28,7 @@ public class Main {
 		elementParsePro.load(Main.class.getResourceAsStream("elementParseProperties.properties"));
 		
 		Properties elementAliasPro = new Properties();
-		elementAliasPro.load(Main.class.getResourceAsStream("elementParseProperties.properties"));
+		elementAliasPro.load(Main.class.getResourceAsStream("elementAliasProperties.properties"));
 		
 		factory.setClassNameProperties(classNamePro);
 		factory.setElementParseProperties(elementParsePro);
